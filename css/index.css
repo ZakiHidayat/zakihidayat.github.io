@@ -1,0 +1,123 @@
+/* INDEX CSS */
+
+/* INDEX CSS */
+
+/* INDEX CSS */
+
+
+/* ======= VARIABLE ======= */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* ======= HEADER CONTENT ======= */
+header {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.header_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_title {
+    font-size: 2.3vw;
+    color: var(--color-bg2);
+    font-family: NeueMachinaLight;
+    margin-left: 100px;
+    line-height: 1.8em;
+}
+
+.header_title_span {
+    font-family: NeueMachinaLight;
+    font-size: 7rem;
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ___ SOSMED ICONS ___ */
+
+.sosmed_icons{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.uil{
+    border: 1px solid var(--color-bg2);
+    color: var(--color-bg2);
+    padding-left: 0.7rem;
+    padding-top: 0.7rem;
+    padding-right: 0.7rem;
+    padding-bottom: 0.6rem;
+    border-radius: 100%;
+    font-size: 1.5em;
+    margin-right: 0.6rem;
+    transition: var(--o-transition);
+}
+
+.uil:hover{
+    color: var(--color-bg1);
+    background-color: var(--color-bg2);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--o-transition);
+}
+/* ___ END SOSMED ICONS ___ */
+
+.btn_seemyworks_container{
+    margin-top: 2rem;
+}
+
+.btn_seemyworks {
+    position: absolute;
+    font-size: 1.3vw;
+    color: var(--color-bg2);
+    border: 1px solid var(--color-bg2);
+    font-family: NeueMachinaLight;
+    border-radius: 30px;
+    padding-inline: 1.5vw;
+    padding-block: 1vw;
+    margin-left: 100px;
+    transition: var(--o-transition);
+}
+
+
+.btn_seemyworks:hover {
+    letter-spacing: 0.2rem;
+    box-shadow: 0px 0px 25px var(--color-bg2);
+}
+
+.header-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.img_zaki{
+    height: 78vh;
+    background-position: center center;
+    transition: var(--o-transition);
+}
+
+.img_zaki:hover{
+    filter: drop-shadow(0px 0px 40px var(--color-bg2));
+    transform: scale(1.03);
+}
+/* ======= END HEADER CONTENT ======= */
