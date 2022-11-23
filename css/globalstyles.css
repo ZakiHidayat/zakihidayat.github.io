@@ -4,119 +4,123 @@
 
 /* GLOBAL STYLES CSS */
 
-
 /* ======= VARIABLE ======= */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    list-style: none;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
-    --color-primary: #1476C1;
-    --color-bg1: #111111;
-    --color-bg2: #FDF8ED;
-    --color-gradient: linear-gradient(to right, rgb(240, 104, 68) 0%, rgb(238, 76, 84) 25%, rgb(212, 94, 149) 50%, rgb(156, 108, 166) 75%, rgb(101, 131, 193) 100%);
-    --o-transition: all 600ms ease;
+  --color-primary: #1476c1;
+  --color-bg1: #111111;
+  --color-bg2: #fdf8ed;
+  --color-gradient: linear-gradient(
+    to right,
+    rgb(240, 104, 68) 0%,
+    rgb(238, 76, 84) 25%,
+    rgb(212, 94, 149) 50%,
+    rgb(156, 108, 166) 75%,
+    rgb(101, 131, 193) 100%
+  );
+  --o-transition: all 600ms ease;
 }
 /* ======= END VARIABLE ======= */
 
-
 /* ======= FONT FAMILY ======= */
 @font-face {
-    font-family: NeueMachinaLight;
-    src: url(/font/NeueMachina-Light.otf);
+  font-family: NeueMachinaLight;
+  src: url(/font/NeueMachina-Light.otf);
 }
 
 @font-face {
-    font-family: NeueMachinaRegular;
-    src: url(/font/NeueMachina-Regular.otf);
+  font-family: NeueMachinaRegular;
+  src: url(/font/NeueMachina-Regular.otf);
 }
 
 @font-face {
-    font-family: NeueMachinaUltraBold;
-    src: url(/font/NeueMachina-Ultrabold.otf);
+  font-family: NeueMachinaUltraBold;
+  src: url(/font/NeueMachina-Ultrabold.otf);
 }
 
 /* ======= END FONT FAMILY ======= */
 
 /* ======= GLOBAL STYLE ======= */
 body {
-    background-color: var(--color-bg1);
-    height: 100vh;
-    font-family: "NeueMachinaRegular";
+  background-color: var(--color-bg1);
+  height: 100vh;
+  font-family: "NeueMachinaRegular";
 }
 
 /* ======= END GLOBAL STYLE ======= */
 
-
 /* ======= NAVBAR ======= */
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
 }
 
 .navbar_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 45px;
-    background: rgba(17, 17, 17, 0.5);
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 45px;
+  background: rgba(17, 17, 17, 0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 }
 
 .navbar-item {
-    margin-left: 6rem;
-    list-style-type: none;
+  margin-left: 6rem;
+  list-style-type: none;
 }
 
 .toggle {
-    margin: 0 20px;
-    display: none;
+  margin: 0 20px;
+  display: none;
 }
 
 .logo {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .navbar-logo {
-    font-size: large;
-    list-style-type: none;
-    color: var(--color-bg2);
-    font-family: NeueMachinaLight;
-    text-decoration: none;
+  font-size: large;
+  list-style-type: none;
+  color: var(--color-bg2);
+  font-family: NeueMachinaLight;
+  text-decoration: none;
 }
 
 .navbar-link {
-    border-bottom: 1.5px solid transparent;
-    font-size: large;
-    font-family: NeueMachinaLight;
-    transition: var(--o-transition);
-    color: var(--color-bg2);
-    text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  font-size: large;
+  font-family: NeueMachinaLight;
+  transition: var(--o-transition);
+  color: var(--color-bg2);
+  text-decoration: none;
 }
 
 .navbar-link:hover {
-    letter-spacing: 0.3rem;
+  letter-spacing: 0.3rem;
 }
 
 /* ======= END NAVBAR ======= */
 
 /* ======= PRELOADER ======= */
-#preloader{
-    background: var(--color-bg1) url(/image/loading.gif) no-repeat center center;
-    background-size: 30%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
+#preloader {
+  background: var(--color-bg1) url(/image/loading.gif) no-repeat center center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
 /* ======= END PRELOADER ======= */

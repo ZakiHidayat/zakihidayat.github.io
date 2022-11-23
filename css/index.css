@@ -66,6 +66,10 @@ header {
     font-size: 1.5em;
     margin-right: 0.6rem;
     transition: var(--o-transition);
+    -webkit-transition: var(--o-transition);
+    -moz-transition: var(--o-transition);
+    -ms-transition: var(--o-transition);
+    -o-transition: var(--o-transition);
 }
 
 .uil:hover{
@@ -78,6 +82,10 @@ header {
     align-items: center;
     justify-content: center;
     transition: var(--o-transition);
+    -webkit-transition: var(--o-transition);
+    -moz-transition: var(--o-transition);
+    -ms-transition: var(--o-transition);
+    -o-transition: var(--o-transition);
 }
 /* ___ END SOSMED ICONS ___ */
 
@@ -96,6 +104,10 @@ header {
     padding-block: 1vw;
     margin-left: 100px;
     transition: var(--o-transition);
+    -webkit-transition: var(--o-transition);
+    -moz-transition: var(--o-transition);
+    -ms-transition: var(--o-transition);
+    -o-transition: var(--o-transition);
 }
 
 
@@ -114,10 +126,19 @@ header {
     height: 78vh;
     background-position: center center;
     transition: var(--o-transition);
+    -webkit-transition: var(--o-transition);
+    -moz-transition: var(--o-transition);
+    -ms-transition: var(--o-transition);
+    -o-transition: var(--o-transition);
 }
 
 .img_zaki:hover{
     filter: drop-shadow(0px 0px 40px var(--color-bg2));
     transform: scale(1.03);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
+    -webkit-filter: drop-shadow(0px 0px 40px var(--color-bg2));
 }
 /* ======= END HEADER CONTENT ======= */
