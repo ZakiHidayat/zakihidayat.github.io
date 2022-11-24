@@ -4,7 +4,6 @@
 
 /* EXPERIENCES CSS */
 
-
 /* ======= VARIABLE ======= */
 * {
   margin: 0;
@@ -28,15 +27,15 @@
   background-color: #111;
 }
 
-.page_title{
-    font-size: 8vw;
-    background-image: var(--color-gradient);
-    font-family: NeueMachinaUltraBold;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-align: center;
-    margin-bottom: 120px;
+.page_title {
+  font-size: 8vw;
+  background-image: var(--color-gradient);
+  font-family: NeueMachinaUltraBold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: 120px;
 }
 
 .timeline {
@@ -57,6 +56,11 @@
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
+  transition: var(--o-transition);
+  -webkit-transition: var(--o-transition);
+  -moz-transition: var(--o-transition);
+  -ms-transition: var(--o-transition);
+  -o-transition: var(--o-transition);
 }
 
 .timeline ul li:last-child {
@@ -69,6 +73,7 @@
   line-height: 30px;
   margin-bottom: 10px;
   font-family: NeueMachinaRegular;
+  text-transform: capitalize;
 }
 
 .timeline-content p {
@@ -76,6 +81,7 @@
   line-height: 30px;
   font-weight: 300;
   font-family: NeueMachinaLight;
+  text-transform: capitalize;
 }
 
 .timeline-content .date {
@@ -95,7 +101,7 @@
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background-color:  rgb(85, 85, 85);
+    background-color: rgb(85, 85, 85);
   }
 
   .timeline ul li {
@@ -113,7 +119,7 @@
     -moz-transform: translateX(-30px);
     -ms-transform: translateX(-30px);
     -o-transform: translateX(-30px);
-}
+  }
 
   .timeline ul li:nth-child(even) {
     float: right;
@@ -124,7 +130,7 @@
     -moz-transform: translateX(30px);
     -ms-transform: translateX(30px);
     -o-transform: translateX(30px);
-}
+  }
 
   .timeline ul li::before {
     content: "";
@@ -139,7 +145,7 @@
     -moz-transition: var(--o-transition);
     -ms-transition: var(--o-transition);
     -o-transition: var(--o-transition);
-}
+  }
 
   .timeline ul li:nth-child(odd)::before {
     transform: translate(50%, -50%);
@@ -148,7 +154,7 @@
     -moz-transform: translate(50%, -50%);
     -ms-transform: translate(50%, -50%);
     -o-transform: translate(50%, -50%);
-}
+  }
 
   .timeline ul li:nth-child(even)::before {
     transform: translate(-50%, -50%);
@@ -157,7 +163,7 @@
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-}
+  }
 
   .timeline-content .date {
     position: absolute;
@@ -168,4 +174,7 @@
     background-color: var(--color-bg2);
   }
 
+  .timeline ul li:hover {
+    background-color: var(--color-bg1);
+  }
 }

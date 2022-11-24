@@ -99,7 +99,7 @@ header {
     color: var(--color-bg2);
     border: 1px solid var(--color-bg2);
     font-family: NeueMachinaLight;
-    border-radius: 30px;
+    border-radius: 20px;
     padding-inline: 1.5vw;
     padding-block: 1vw;
     margin-left: 100px;
@@ -108,6 +108,10 @@ header {
     -moz-transition: var(--o-transition);
     -ms-transition: var(--o-transition);
     -o-transition: var(--o-transition);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 
@@ -133,12 +137,12 @@ header {
 }
 
 .img_zaki:hover{
-    filter: drop-shadow(0px 0px 40px var(--color-bg2));
     transform: scale(1.03);
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    filter: drop-shadow(0px 0px 40px var(--color-bg2));
     -webkit-filter: drop-shadow(0px 0px 40px var(--color-bg2));
 }
 /* ======= END HEADER CONTENT ======= */
