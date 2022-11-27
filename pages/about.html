@@ -47,65 +47,49 @@
                 <a href="mailto:zakihidayat@icloud.com?subject=Hey Abdul.. " class="navbar-link">Get In Touch</a>
             </li>
         </ul>
+
     </nav>
     <!-- End Navbar -->
 
-    <div class="container">
-        <div class="page page_header">
-            <div class="header_text">
-                <div data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease">
-                    <h1 class="header_title">ABOUT ME<h1>
-                </div>
-                <!-- <div data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease">
-                    <h1 class="header_title_2">WEB DEVELOPER & UI/UX DESIGNER<h1>
-                </div> -->
-                <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease" class="button_container">
-                    <p class="scroll_information">Scroll For More About Me</p>
-                    <i class="uil uil-arrow-right" aria-hidden="true"></i>
-                </div>
+    <!-- <header class="page page_header">
+        <div class="header_text">
+            <div data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease">
+                <h1 class="header_title">ABOUT ME<h1>
             </div>
+            <div data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease">
+                    <h1 class="header_title_2">WEB DEVELOPER & UI/UX DESIGNER<h1>
+                </div>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease" class="button_container">
+                <p class="scroll_information">Scroll For More About Me</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease" class="button_container"><i
+                    class="uil uil-arrow-down" aria-hidden="true"></i></div>
         </div>
-        <div class="page page_aboutme">
-            <div class="about">
+    </header> -->
+
+    <div class="page page_aboutme">
+        <div class="about">
+            <div>
                 <h1 class="about_title_name">Abdul Aziz<br>Zaki Hidayat.</h1>
-                <h1 class="about_title">I'm a
-                    Web Dev & UI/UX Designer<br>Based in Jakarta, Indonesia.</h1>
+            </div>
+            <div>
+                <h1 class="about_title">I'm a Web Dev & UI/UX Designer<br>Based in Jakarta, Indonesia.</h1>
+            </div>
+            <div>
                 <p class="about_desc">16 years old Software Engineer and UI/UX Designer who specializes<br>in App
                     Development, Web Development, Web Design, App Design etc.</p>
-                <div class="btn_skill_container">
-                    <button class="btn_skill">See My Skills</button>
-                </div>
             </div>
-    
-            <footer>
-                <p>Abdul Aziz Zaki Hidayat &copy; 2022</p>
-            </footer>
         </div>
+
+        <footer>
+            <p>Abdul Aziz Zaki Hidayat &copy; 2022</p>
+        </footer>
     </div>
 
     <!-- AOS JS -->
     <script>
 
         AOS.init();
-
-        var loader = document.getElementById("preloader");
-        window.addEventListener("load", function () {
-            loader.style.display = "none";
-        });
-
-        const container = document.querySelector('.container');
-        let scrollLine = document.querySelector('.scroll');
-
-        container.addEventListener('wheel', (e) => {
-            e.preventDefault();
-            container.scrollLeft += e.deltaY;
-            scrollLine = container.scrollLeft / 2 + 'px';
-        });
-
-        const locoScroll = new LocomotiveScroll({
-            el: document.querySelector(".container"),
-            smooth: true
-        });
 
     </script>
 </body>

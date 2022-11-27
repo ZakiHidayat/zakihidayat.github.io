@@ -27,19 +27,19 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 5vw;
 }
 
 .header_title {
     font-size: 2.3vw;
     color: var(--color-bg2);
     font-family: NeueMachinaLight;
-    margin-left: 100px;
     line-height: 1.8em;
 }
 
 .header_title_span {
     font-family: NeueMachinaLight;
-    font-size: 7rem;
+    font-size: 8vw;
     background: var(--color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -52,7 +52,6 @@ header {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
 }
 
 .uil{
@@ -99,19 +98,18 @@ header {
     color: var(--color-bg2);
     border: 1px solid var(--color-bg2);
     font-family: NeueMachinaLight;
-    border-radius: 20px;
+    border-radius: 20vw;
     padding-inline: 1.5vw;
     padding-block: 1vw;
-    margin-left: 100px;
     transition: var(--o-transition);
     -webkit-transition: var(--o-transition);
     -moz-transition: var(--o-transition);
     -ms-transition: var(--o-transition);
     -o-transition: var(--o-transition);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    -webkit-border-radius: 20vw;
+    -moz-border-radius: 20vw;
+    -ms-border-radius: 20vw;
+    -o-border-radius: 20vw;
 }
 
 
