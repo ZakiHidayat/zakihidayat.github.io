@@ -27,11 +27,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5vw;
+    margin-left: 5rem;
 }
 
 .header_title {
-    font-size: 2.3vw;
+    font-size: 2.3rem;
     color: var(--color-bg2);
     font-family: NeueMachinaLight;
     line-height: 1.8em;
@@ -39,7 +39,7 @@ header {
 
 .header_title_span {
     font-family: NeueMachinaLight;
-    font-size: 8vw;
+    font-size: 8rem;
     background: var(--color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -94,22 +94,22 @@ header {
 
 .btn_seemyworks {
     position: absolute;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     color: var(--color-bg2);
     border: 1px solid var(--color-bg2);
     font-family: NeueMachinaLight;
-    border-radius: 20vw;
-    padding-inline: 1.5vw;
-    padding-block: 1vw;
+    border-radius: 20rem;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
     transition: var(--o-transition);
     -webkit-transition: var(--o-transition);
     -moz-transition: var(--o-transition);
     -ms-transition: var(--o-transition);
     -o-transition: var(--o-transition);
-    -webkit-border-radius: 20vw;
-    -moz-border-radius: 20vw;
-    -ms-border-radius: 20vw;
-    -o-border-radius: 20vw;
+    -webkit-border-radius: 20rem;
+    -moz-border-radius: 20rem;
+    -ms-border-radius: 20rem;
+    -o-border-radius: 20rem;
 }
 
 

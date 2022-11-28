@@ -5,7 +5,7 @@
 /* ABOUT CSS */
 
 body {
-  height: 100vh;
+  height: 90vh;
   --light: hsl(220, 50%, 90%);
   --primary: hsl(255, 30%, 55%);
   --focus: hsl(210, 90%, 50%);
@@ -23,6 +23,7 @@ body {
 .page {
   min-width: 100%;
   height: 100%;
+  width: 80%;
 }
 
 /* ======= ABOUT ME ======= */
@@ -47,7 +48,7 @@ body {
 
 .about_title_name {
   font-family: NeueMachinaUltraBold;
-  font-size: 8vw;
+  font-size: 8rem;
   line-height: 1.2em;
   background: var(--color-gradient);
   -webkit-background-clip: text;
@@ -56,19 +57,19 @@ body {
 }
 
 .about_title {
-  font-size: 2vw;
+  font-size: 2rem;
   color: var(--color-bg2);
-  margin-top: 2.5vw;
+  margin-top: 2rem;
   font-family: NeueMachinaLight;
   line-height: 1.5em;
   /* text-align: center; */
 }
 
 .about_desc {
-  margin-top: 2.8vw;
+  margin-top: 2.2rem;
   font-family: NeueMachinaLight;
   color: var(--color-bg2);
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   line-height: 1.2em;
 }
 
@@ -125,6 +126,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   width: 60rem;
   padding: 4rem 2rem;
   border-radius: 0.8rem;
+  margin-inline: 15px;
 
   color: var(--light);
   background: var(--background);
@@ -135,20 +137,20 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 }
 
 .modal__title {
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 
 .modal__text {
   padding: 0 4rem;
   margin-top: 4rem;
 
-  font-size: 1.6vw;
+  font-size: 1.6rem;
   line-height: 2;
 }
 
 .modal__btn {
   margin-top: 4rem;
-  padding: 1vw 1.6rem;
+  padding: 1rem 1.6rem;
   border: 1px solid var(--border-color);
   border-radius: 100rem;
   color: inherit;
@@ -181,13 +183,13 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 
 /* link-... */
 .link-1 {
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   color: var(--light);
   background: var(--background);
   box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem var(--shadow-1);
   border-radius: 100rem;
-  padding: 1.5vw 2.7vw;
-  margin-top: 2.3vw;
+  padding: 1.3rem 2.2rem;
+  margin-top: 2rem;
 
   transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -199,8 +201,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 .link-1:hover {
   box-shadow:
    0 0 4.4rem 0.2rem var(--shadow-2),
-   0 0 0 0.4vw var(--global-background),
-   0 0 0 0.5vw var(--color-bg2);
+   0 0 0 0.4rem var(--global-background),
+   0 0 0 0.5rem var(--color-bg2);
     
   transform: translateY(-0.2rem);
   -webkit-transform: translateY(-0.2rem);
@@ -242,8 +244,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 
 .link-2:hover,
 .link-2:focus {
-  color: var(--primary);
-  background: var(--color-bg2);
+  color: #332D50;
+  background: var(--light);
   border-color: var(--color-bg2);
   transform: translateY(-0.2rem);
   -webkit-transform: translateY(-0.2rem);
@@ -258,6 +260,101 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   left: 20px;
   color: hsla(0, 0%, 1000%, 0.6);
   font-size: 1.6rem;
+}
+
+.skills_wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.details{
+  width: 100%;
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar{
+  position: relative;
+
+  border: 1px solid var(--light);
+
+  border-radius: 20px;
+
+}
+.bar div{
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color:  var(--light);
+}
+
+.skills:not(:last-child){
+  margin-bottom: 30px;
+}
+
+#html-bar{
+  animation: html-fill 2s forwards;
+  -webkit-animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+  100%{
+      width: 75%;
+  }
+}
+
+#ui-bar{
+  animation: ui-fill 2s forwards;
+  -webkit-animation: ui-fill 2s forwards;
+}
+@keyframes ui-fill{
+  100%{
+      width: 90%;
+  }
+}
+
+#ux-bar{
+  animation: ux-fill 2s forwards;
+  -webkit-animation: ux-fill 2s forwards;
+}
+@keyframes ux-fill{
+  100%{
+      width: 78%;
+  }
+}
+
+.Software_wrapper{
+  margin-top: 3em;
+}
+
+#figma-bar{
+  animation: figma-fill 2s forwards;
+  -webkit-animation: figma-fill 2s forwards;
+}
+@keyframes figma-fill{
+  100%{
+      width: 98%;
+  }
+}
+
+#vsc-bar{
+  animation: vsc-fill 2s forwards;
+  -webkit-animation: vsc-fill 2s forwards;
+}
+@keyframes vsc-fill{
+  100%{
+      width: 95%;
+  }
+}
+
+#as-bar{
+  animation: as-fill 2s forwards;
+  -webkit-animation: as-fill 2s forwards;
+}
+@keyframes as-fill{
+  100%{
+      width: 90%;
+  }
 }
 /* == END MODAL ==*/
 
