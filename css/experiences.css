@@ -15,6 +15,10 @@
   text-decoration: none;
 }
 
+.body{
+  overflow: none;
+}
+
 .container {
   margin-top: 85px;
   min-height: 100vh;
@@ -80,6 +84,7 @@
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
+  margin-top: 15px;
   font-family: NeueMachinaLight;
   text-transform: capitalize;
 }

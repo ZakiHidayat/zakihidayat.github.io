@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="/css/aos.css" rel="stylesheet">
+    <script src="/js/aos.js"></script>
 
     <!-- ICONSCOUT -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -17,8 +17,6 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/globalstyles.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
     <title>About Me</title>
 </head>
@@ -69,21 +67,30 @@
 
     <div class="page page_aboutme">
         <div class="about">
-            <div>
+            <div data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease">
                 <h1 class="about_title_name">Abdul Aziz<br>Zaki Hidayat.</h1>
             </div>
-            <div>
+            <div data-aos="fade-down" data-aos-duration="2500" data-aos-easing="ease">
                 <h1 class="about_title">I'm a Web Dev & UI/UX Designer<br>Based in Jakarta, Indonesia.</h1>
             </div>
-            <div>
+            <div data-aos="fade-down" data-aos-duration="2000" data-aos-easing="ease">
                 <p class="about_desc">16 years old Software Engineer and UI/UX Designer who specializes<br>in App
                     Development, Web Development, Web Design, App Design etc.</p>
             </div>
+            <!-- modal 3 -->
+            <div class="box">
+                <a href="#m3-o" class="link-1" id="m3-c">See My Skills</a>
+                <div class="modal-container" id="m3-o" style="--m-background: var(--global-background);">
+                    <div class="modal" style="--m-shadow: 0 0 10rem 0">
+                        <h1 class="modal__title">My Skills</h1>
+                        <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex
+                            dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
+                        <a href="#m3-c" class="link-2"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /modal 3 -->
         </div>
-
-        <footer>
-            <p>Abdul Aziz Zaki Hidayat &copy; 2022</p>
-        </footer>
     </div>
 
     <!-- AOS JS -->

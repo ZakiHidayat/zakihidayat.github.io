@@ -46,7 +46,7 @@ header {
     background-clip: text;
 }
 
-/* ___ SOSMED ICONS ___ */
+/* == SOSMED ICONS == */
 
 .sosmed_icons{
     margin-top: 1.5rem;
@@ -86,7 +86,7 @@ header {
     -ms-transition: var(--o-transition);
     -o-transition: var(--o-transition);
 }
-/* ___ END SOSMED ICONS ___ */
+/* == END SOSMED ICONS == */
 
 .btn_seemyworks_container{
     margin-top: 2rem;
