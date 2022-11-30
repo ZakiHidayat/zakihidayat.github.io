@@ -18,21 +18,54 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/globalstyles.css">
 
-    <!-- Curtain Nav -->
-    <link rel="stylesheet" href="/css/overlay.css">
-
-    <!-- JQuery JS For Nav -->
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script>
-        $(function(){
-            $('body').load('navbar.html');
-        })
-    </script>
+    <!-- Menu -->
+    <script defer src="/js/menu.js"></script>
 
     <title>Zaki Hidayat</title>
 </head>
 
 <body>
+
+    <!-- Navbar -->
+    <div class="nav_wrapper">
+
+        <nav>
+            <div class="logo">
+                <a href="#">Zaki Hidayat</a>
+            </div>
+            <div class="toggle">
+                <i class="uil uil-bars"></i>
+                <i class="uil uil-multiply"></i>
+            </div>
+        </nav>
+    
+        <section class="navigation">
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <ul>
+                <li>
+                    <a class="active nav_item_active" href="/index.html">Index</a>
+                </li>
+                <li>
+                    <a class="nav_item" href="/pages/about.html">About</a>
+                </li>
+                <li>
+                    <a class="nav_item" href="/pages/experiences.html">Experience</a>
+                </li>
+                <li>
+                    <a class="nav_item" href="/pages/achievements.html">Achievement</a>
+                </li>
+                <li>
+                    <a class="nav_item" href="mailto:zakihidayat@icloud.com?subject=Hey Abdul.. ">Get In Touch</a>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+    <!-- End Navbar -->
 
     <!-- Header -->
     <header>
@@ -67,8 +100,6 @@
         </div>
     </header>
     <!-- End Header -->
-
-    <script src="/js/menu.js"></script>
 
     <script>
         AOS.init();
