@@ -31,7 +31,7 @@
 }
 
 .page_title {
-  font-size: 8rem;
+  font-size: 8vw;
   background-image: var(--color-gradient);
   font-family: NeueMachinaUltraBold;
   -webkit-background-clip: text;

@@ -48,7 +48,7 @@ body {
 
 .about_title_name {
   font-family: NeueMachinaUltraBold;
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 1.2em;
   background: var(--color-gradient);
   -webkit-background-clip: text;
@@ -275,9 +275,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 }
 .bar{
   position: relative;
-
   border: 1px solid var(--light);
-
   border-radius: 20px;
 
 }
@@ -286,7 +284,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   width: 0;
   height: 9px;
   border-radius: 10px;
-  background-color:  var(--light);
+  background-color: var(--light);
 }
 
 .skills:not(:last-child){

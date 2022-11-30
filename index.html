@@ -6,51 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- AOS -->
-     <link href="/css/aos.css" rel="stylesheet">
-     <script src="/js/aos.js"></script>
+    <!-- AOS -->
+    <link href="/css/aos.css" rel="stylesheet">
+    <script src="/js/aos.js"></script>
 
-     <!-- ICONSCOUT -->
-     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <!-- ICONSCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/globalstyles.css">
 
+    <!-- Curtain Nav -->
+    <link rel="stylesheet" href="/css/overlay.css">
+
+    <!-- JQuery JS For Nav -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('body').load('navbar.html');
+        })
+    </script>
+
     <title>Zaki Hidayat</title>
 </head>
 
 <body>
-
-    <!-- Pre Loader -->
-    <div class="preloader"></div>
-    <!-- End Pre Loader -->
-
-    <!-- Navbar -->
-        <nav>
-            <ul class="navbar_list">
-                <li data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease" class="logo">
-                    <a href="/pages/index.html" class="navbar-logo">Zaki Hidayat</a>
-                </li>
-                <li data-aos="fade-down" data-aos-duration="1800" data-aos-easing="ease" class="toggle">
-                    <img src="" alt="Bars">
-                </li>
-                <li data-aos="fade-down" data-aos-duration="2100" data-aos-easing="ease" class="navbar-item">
-                    <a href="/pages/about.html" class="navbar-link">About</a>
-                </li>
-                <li data-aos="fade-down" data-aos-duration="2400" data-aos-easing="ease" class="navbar-item">
-                    <a href="/pages/experiences.html" class="navbar-link">Experiences</a>
-                </li>
-                <li data-aos="fade-down" data-aos-duration="2400" data-aos-easing="ease" class="navbar-item">
-                    <a href="/pages/achievements.html" class="navbar-link">Achievements</a>
-                </li>
-                <li data-aos="fade-down" data-aos-duration="2800" data-aos-easing="ease" class="navbar-item">
-                    <a href="mailto:zakihidayat@icloud.com?subject=Hey Abdul.. " class="navbar-link">Get In Touch</a>
-                </li>
-            </ul>
-        </nav>
-    <!-- End Navbar -->
 
     <!-- Header -->
     <header>
@@ -62,10 +44,19 @@
                 </div>
             </div>
             <div class="sosmed_icons">
-                <div data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease" class="icon"><a href="https://instagram.com/zakbeebat" target="_blank"><i class="uil uil-instagram"></i></a></div>
-                <div data-aos="fade-down" data-aos-duration="2000" data-aos-easing="ease" class="icon"><a href="https://github.com/ZakiHidayat" target="_blank"><i class="uil uil-github"></i></a></div>
-                <div data-aos="fade-down" data-aos-duration="2500" data-aos-easing="ease" class="icon"><a href="https://www.linkedin.com/in/zakihidayat/" target="_blank"><i class="uil uil-linkedin"></i></a></div>
-                <div data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease" class="icon"><a href="mailto:zakihidayat@icloud.com?subject=Hey Abdul.. " target="_blank"><i class="uil uil-envelope"></i></a></div>
+                <div data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease" class="icon"><a
+                        href="https://instagram.com/zakbeebat" target="_blank">
+                        <i class="uil uil-instagram"></i></a>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="2000" data-aos-easing="ease" class="icon"><a
+                        href="https://github.com/ZakiHidayat" target="_blank">
+                        <i class="uil uil-github"></i></a></div>
+                <div data-aos="fade-down" data-aos-duration="2500" data-aos-easing="ease" class="icon"><a
+                        href="https://www.linkedin.com/in/zakihidayat/" target="_blank">
+                        <i class="uil uil-linkedin"></i></a></div>
+                <div data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease" class="icon"><a
+                        href="mailto:zakihidayat@icloud.com?subject=Hey Abdul.. " target="_blank">
+                        <i class="uil uil-envelope"></i></a></div>
             </div>
             <div class="btn_seemyworks_container" data-aos="fade-right" data-aos-duration="2300" data-aos-easing="ease">
                 <a class="btn_seemyworks" href="">See My Works</a>
@@ -77,13 +68,10 @@
     </header>
     <!-- End Header -->
 
+    <script src="/js/menu.js"></script>
+
     <script>
         AOS.init();
-
-        var loader = document.getElementById("preloader");
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
     </script>
 </body>
 
