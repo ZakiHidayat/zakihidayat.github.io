@@ -44,6 +44,7 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  overflow: hidden;
 }
 
 .about_title_name {
@@ -138,6 +139,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 
 .modal__title {
   font-size: 2.3rem;
+  margin-bottom: 1rem;
 }
 
 .modal__text {

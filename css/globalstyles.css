@@ -229,6 +229,33 @@ nav {
   -moz-text-decoration-line: line-through;
 }
 
+.nav_item_active{
+  position: relative;
+}
+
+.nav_item_active:before{
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 10rem;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 110%;
+}
+
+.nav_item_active:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media (max-width:767px) {
   nav {
     padding-right: 1.5rem;
@@ -237,6 +264,16 @@ nav {
 
   .navigation ul li a {
     font-size: 2em;
+  }
+
+  .navigation ul li .nav_item {
+    font-size: 2em;
+  }
+
+  .nav_item_active:before{
+    width: 7rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
   }
 }
 

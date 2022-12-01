@@ -1,0 +1,43 @@
+/* ACHIEVEMENTS CSS */
+
+/* ACHIEVEMENTS CSS */
+
+/* ACHIEVEMENTS CSS */
+
+
+/* ======= VARIABLE ======= */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  .body{
+    overflow: none;
+  }
+
+  .container {
+    margin-top: 85px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: #111;
+  }
+
+  .page_title {
+    font-size: 8vw;
+    background-image: var(--color-gradient);
+    font-family: NeueMachinaUltraBold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 120px;
+  }

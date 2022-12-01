@@ -19,8 +19,7 @@
 /* ======= HEADER CONTENT ======= */
 header {
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
 }
 
 .header_content {
@@ -119,9 +118,9 @@ header {
 }
 
 .header-img {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    position: absolute;
+    right: 13vw;
+    bottom: 0;
 }
 
 .img_zaki{
