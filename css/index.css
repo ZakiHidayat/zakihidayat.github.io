@@ -30,7 +30,7 @@ header {
 }
 
 .header_title {
-    font-size: 2rem;
+    font-size: 2.1rem;
     color: var(--color-bg2);
     font-family: NeueMachinaLight;
     line-height: 1.8em;
@@ -38,11 +38,18 @@ header {
 
 .header_title_span {
     font-family: NeueMachinaLight;
-    font-size: 8rem;
+    font-size: 7rem;
     background: var(--color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* Typed Cursor */
+.typed-cursor{
+    font-family: NeueMachinaLight;
+    font-size: 7rem;
+    color: var(--color-bg2);
 }
 
 /* == SOSMED ICONS == */
