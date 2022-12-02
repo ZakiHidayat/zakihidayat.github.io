@@ -30,7 +30,7 @@
     <div class="nav_wrapper">
 
         <nav>
-            <div class="logo" title="You'll Back To Home Again">
+            <div class="logo">
                 <a href="/index.html">Zaki Hidayat</a>
             </div>
             <div class="toggle">
@@ -72,7 +72,7 @@
         <div class="header_content">
             <div class="container header_container">
                 <div class="header_text" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease">
-                    <h1 class="header_title"><span class="header_title_span">Hola!</span><br>I'm Zaki Hidayat.<br>I'm a
+                    <h1 class="header_title"><span class="header_title_span"></span><br>I'm Zaki Hidayat.<br>I'm a
                         Web Dev & UI/UX Designer<br>Based in Jakarta, Indonesia.<h1>
                 </div>
             </div>
@@ -101,6 +101,18 @@
         </div>
     </header>
     <!-- End Header -->
+
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed('.header_title_span', {
+            strings: ["Hallo!", "Halo!", "Hola!", "Bonjour!", "Hej!", "Ciao!", "Merhaba!", "안녕하세요!", "สวัสดี!", "こんにちは!",],
+            typeSpeed: 160,
+            backSpeed: 150,
+            loop: true,
+        });
+    </script>
 
     <script>
         AOS.init();
