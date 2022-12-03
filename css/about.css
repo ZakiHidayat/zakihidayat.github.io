@@ -11,11 +11,9 @@ body {
   --focus: hsl(210, 90%, 50%);
   --border-color: hsla(0, 0%, 100%, 0.2);
   --global-background: hsl(220, 25%, 10%);
-  --background: linear-gradient(
-    to right,
-    hsl(210, 30%, 20%),
-    hsl(255, 30%, 25%)
-  );
+  --background: linear-gradient(to right,
+      hsl(210, 30%, 20%),
+      hsl(255, 30%, 25%));
   --shadow-1: hsla(236, 50%, 50%, 0.3);
   --shadow-2: hsla(236, 50%, 50%, 0.4);
 }
@@ -74,7 +72,104 @@ body {
   line-height: 1.2em;
 }
 
-/* == MODAL == */
+@media only screen and (max-width: 1280px) {
+
+  .about_title_name {
+    font-size: 6rem;
+  }
+
+  .about_title {
+    font-size: 1.8rem;
+  }
+
+}
+
+@media only screen and (max-width: 945px) {
+
+  .about_title_name {
+    font-size: 4rem;
+  }
+
+  .about_title {
+    font-size: 1.4rem;
+  }
+
+  .about_desc {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media only screen and (max-width: 680px) {
+
+  .about_title_name {
+    font-size: 3rem;
+  }
+
+  .about_title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .about_desc {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .page {
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about_title_name {
+    font-size: 2.2rem;
+  }
+
+  .about_title {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .about_desc {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 380px) {
+
+  .page {
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about_title_name {
+    font-size: 2rem;
+  }
+
+  .about_title {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .about_desc {
+    margin-top: 1rem;
+    font-size: 0.4rem;
+  }
+
+}
+
+
+
+
+/* **** SKILLS MODAL **** */
 a,
 a:link {
   font-family: inherit;
@@ -202,10 +297,10 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 
 .link-1:hover {
   box-shadow:
-   0 0 4.4rem 0.2rem var(--shadow-2),
-   0 0 0 0.4rem var(--global-background),
-   0 0 0 0.5rem var(--color-bg2);
-    
+    0 0 4.4rem 0.2rem var(--shadow-2),
+    0 0 0 0.4rem var(--global-background),
+    0 0 0 0.5rem var(--color-bg2);
+
   transform: translateY(-0.2rem);
   -webkit-transform: translateY(-0.2rem);
   -moz-transform: translateY(-0.2rem);
@@ -226,7 +321,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -264,24 +359,26 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   font-size: 1.6rem;
 }
 
-.skills_wrapper{
+.skills_wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.details{
+.details {
   width: 100%;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.bar{
+
+.bar {
   position: relative;
   border: 1px solid var(--light);
   border-radius: 20px;
 
 }
-.bar div{
+
+.bar div {
   position: relative;
   width: 0;
   height: 9px;
@@ -289,73 +386,150 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   background-color: var(--light);
 }
 
-.skills:not(:last-child){
+.skills:not(:last-child) {
   margin-bottom: 30px;
 }
 
-#html-bar{
+#html-bar {
   animation: html-fill 2s forwards;
   -webkit-animation: html-fill 2s forwards;
 }
-@keyframes html-fill{
-  100%{
-      width: 75%;
+
+@keyframes html-fill {
+  100% {
+    width: 75%;
   }
 }
 
-#ui-bar{
+#ui-bar {
   animation: ui-fill 2s forwards;
   -webkit-animation: ui-fill 2s forwards;
 }
-@keyframes ui-fill{
-  100%{
-      width: 90%;
+
+@keyframes ui-fill {
+  100% {
+    width: 90%;
   }
 }
 
-#ux-bar{
+#ux-bar {
   animation: ux-fill 2s forwards;
   -webkit-animation: ux-fill 2s forwards;
 }
-@keyframes ux-fill{
-  100%{
-      width: 78%;
+
+@keyframes ux-fill {
+  100% {
+    width: 78%;
   }
 }
 
-.Software_wrapper{
+.Software_wrapper {
   margin-top: 3em;
 }
 
-#figma-bar{
+#figma-bar {
   animation: figma-fill 2s forwards;
   -webkit-animation: figma-fill 2s forwards;
 }
-@keyframes figma-fill{
-  100%{
-      width: 98%;
+
+@keyframes figma-fill {
+  100% {
+    width: 98%;
   }
 }
 
-#vsc-bar{
+#vsc-bar {
   animation: vsc-fill 2s forwards;
   -webkit-animation: vsc-fill 2s forwards;
 }
-@keyframes vsc-fill{
-  100%{
-      width: 95%;
+
+@keyframes vsc-fill {
+  100% {
+    width: 95%;
   }
 }
 
-#as-bar{
+#as-bar {
   animation: as-fill 2s forwards;
   -webkit-animation: as-fill 2s forwards;
 }
-@keyframes as-fill{
-  100%{
-      width: 90%;
+
+@keyframes as-fill {
+  100% {
+    width: 90%;
   }
 }
-/* == END MODAL ==*/
+
+@media only screen and (max-width: 945px) {
+
+  .link-1 {
+    font-size: 0.9rem;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem var(--shadow-1);
+    border-radius: 100rem;
+    padding: 1rem 1.8rem;
+    margin-top: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 680px) {
+
+  .modal__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .details span {
+    font-size: 0.7rem;
+  }
+
+  .link-1 {
+    font-size: 0.7rem;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem var(--shadow-1);
+    border-radius: 100rem;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .link-1 {
+    font-size: 0.7rem;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem var(--shadow-1);
+    border-radius: 100rem;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .link-2 {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .modal {
+    width: 60rem;
+    padding: 3rem 2rem 2rem 2rem;
+    border-radius: 0.8rem;
+    margin-inline: 15px;
+
+    color: var(--light);
+    background: var(--background);
+    box-shadow: var(--m-shadow, 0.4rem 0.4rem 10.2rem 0.2rem) var(--shadow-1);
+    position: relative;
+
+    overflow: hidden;
+  }
+
+}
+
+/* **** END SKILLS MODAL **** */
 
 /* ======= END ABOUT ME ======= */

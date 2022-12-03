@@ -229,11 +229,11 @@ nav {
   -moz-text-decoration-line: line-through;
 }
 
-.nav_item_active{
+.nav_item_active {
   position: relative;
 }
 
-.nav_item_active:before{
+.nav_item_active:before {
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
@@ -270,10 +270,28 @@ nav {
     font-size: 2em;
   }
 
-  .nav_item_active:before{
+  .nav_item_active:before {
     width: 7rem;
     font-size: 0.8rem;
     line-height: 1rem;
+  }
+}
+
+@media (max-width:360px) {
+  nav {
+    padding-right: 1rem;
+    padding-left: 1.3rem;
+  }
+
+  .toggle {
+    border: 1px solid var(--color-bg2);
+    color: var(--color-bg2);
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.4rem;
+    border-radius: 100%;
+    font-size: 1.2em;
   }
 }
 

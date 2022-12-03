@@ -22,6 +22,10 @@ header {
     display: flex;
 }
 
+
+
+
+/* **** TEXT **** */
 .header_content {
     display: flex;
     flex-direction: column;
@@ -52,8 +56,86 @@ header {
     color: var(--color-bg2);
 }
 
-/* == SOSMED ICONS == */
+@media only screen and (max-width: 945px) {
 
+    .header_title{
+        font-size: 2rem;
+    }
+
+    .header_title_span{
+        font-size: 6.3rem;
+    }
+
+    .typed-cursor{
+        font-size: 6.3rem;
+    }
+    
+}
+
+@media only screen and (max-width: 680px) {
+
+    .header_content {
+        margin-left: 3rem;
+    }
+
+    .header_title{
+        font-size: 1.3rem;
+    }
+
+    .header_title_span{
+        font-size: 4.3rem;
+    }
+
+    .typed-cursor{
+        font-size: 4.3rem;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+
+    .header_content {
+        margin-left: 2rem;
+    }
+
+    .header_title{
+        font-size: 1.07rem;
+    }
+
+    .header_title_span{
+        font-size: 3.4rem;
+    }
+
+    .typed-cursor{
+        font-size: 3.4rem;
+    }
+    
+}
+
+@media only screen and (max-width: 360px) {
+
+    .header_content {
+        margin-left: 1.3rem;
+    }
+
+    .header_title{
+        font-size: 0.9rem;
+    }
+
+    .header_title_span{
+        font-size: 2.8rem;
+    }
+
+    .typed-cursor{
+        font-size: 2.8rem;
+    }
+    
+}
+/* **** END TEXT **** */
+
+
+
+/* **** SOSMED ICONS **** */
 .sosmed_icons{
     margin-top: 1.5rem;
     display: flex;
@@ -92,8 +174,60 @@ header {
     -ms-transition: var(--o-transition);
     -o-transition: var(--o-transition);
 }
-/* == END SOSMED ICONS == */
 
+@media only screen and (max-width: 680px) {
+
+    .sosmed_icons{
+        margin-top: 1.5rem;
+    }
+
+    .icon i {
+            padding-left: 0.7rem;
+            padding-top: 0.7rem;
+            padding-right: 0.7rem;
+            padding-bottom: 0.6rem;
+            font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .sosmed_icons{
+        margin-top: 1.3rem;
+    }
+
+    .icon i {
+            padding-left: 0.6rem;
+            padding-top: 0.6rem;
+            padding-right: 0.6rem;
+            padding-bottom: 0.5rem;
+            font-size: 1.1em;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .sosmed_icons{
+        margin-top: 1rem;
+    }
+
+    .icon i {
+            padding-left: 0.5rem;
+            padding-top: 0.5rem;
+            padding-right: 0.5rem;
+            padding-bottom: 0.4rem;
+            font-size: 0.8em;
+    }
+
+}
+/* **** END SOSMED ICONS **** */
+
+
+
+
+/* **** BUTTON **** */
 .btn_seemyworks_container{
     margin-top: 2rem;
 }
@@ -124,6 +258,54 @@ header {
     box-shadow: 0px 0px 25px var(--color-bg2);
 }
 
+@media only screen and (max-width: 680px) {
+
+    .btn_seemyworks_container{
+        margin-top: 2rem;
+    }
+
+    .btn_seemyworks {
+            padding-inline: 1.2rem;
+            padding-block: 1rem;
+            font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .btn_seemyworks_container{
+        margin-top: 2rem;
+    }
+
+    .btn_seemyworks {
+            padding-inline: 1rem;
+            padding-block: 0.8rem;
+            font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .btn_seemyworks_container{
+        margin-top: 1.4rem;
+    }
+
+    .btn_seemyworks {
+            padding-inline: 0.8rem;
+            padding-block: 0.7rem;
+            font-size: 0.7rem;
+    }
+
+}
+
+/* **** END BUTTON **** */
+
+
+
+
+/* **** IMAGE **** */
 .header-img {
     position: absolute;
     right: 13vw;
@@ -149,4 +331,25 @@ header {
     filter: drop-shadow(0px 0px 40px var(--color-bg2));
     -webkit-filter: drop-shadow(0px 0px 40px var(--color-bg2));
 }
+
+@media only screen and (max-width: 1366px) {
+
+    .header-img{
+        right: 4vw;
+    }
+    
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .header-img{
+        display: none;
+    }
+    
+}
+/* **** END IMAGE **** */
+
 /* ======= END HEADER CONTENT ======= */
+
+
+/* (480px, 768px, 1024px, and 1280px) */
