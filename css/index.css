@@ -23,7 +23,14 @@ header {
 }
 
 
-
+.img_figuretop{
+    position: absolute;
+    width: 50rem;
+    height: 52rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
 
 /* **** TEXT **** */
 .header_content {
