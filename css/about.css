@@ -6,6 +6,7 @@
 
 body {
   height: 90vh;
+  overflow: hidden;
   --light: hsl(220, 50%, 90%);
   --primary: hsl(255, 30%, 55%);
   --focus: hsl(210, 90%, 50%);

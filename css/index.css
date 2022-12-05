@@ -16,17 +16,20 @@
     text-decoration: none;
 }
 
+body{
+    overflow: hidden;
+}
+
 /* ======= HEADER CONTENT ======= */
 header {
     height: 100vh;
     display: flex;
 }
 
-
 .img_figuretop{
     position: absolute;
-    width: 50rem;
-    height: 52rem;
+    width: 54rem;
+    height: 100vh;
     top: 0;
     right: 0;
     bottom: 0;

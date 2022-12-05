@@ -81,11 +81,11 @@
   font-size: 1.6rem;
   font-family: NeueMachinaLight;
   text-transform: uppercase;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.32s ease-in-out;
+  -webkit-transition: all 0.32s ease-in-out;
+  -moz-transition: all 0.32s ease-in-out;
+  -ms-transition: all 0.32s ease-in-out;
+  -o-transition: all 0.32s ease-in-out;
 }
 
 .certificate_date {
