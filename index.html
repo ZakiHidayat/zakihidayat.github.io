@@ -21,6 +21,9 @@
     <!-- Menu -->
     <script defer src="/js/menu.js"></script>
 
+    <!-- Preloading -->
+    <script src="./js/jquery.js"></script>
+
     <title>Zaki Hidayat</title>
 </head>
 
@@ -104,15 +107,24 @@
     <!-- End Header -->
 
     <!-- PreLoading -->
-    <div class="loader">
-        <img src="/image/loading.gif" alt="">
+    <div id="loading">
+        <img id="loading-image" src="/image/loading.gif" alt="">
       </div>
     <!-- End Preloading -->
 
     <!-- Typed JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <script src="/js/preloading.js"></script>
+    <!-- Preloading JS -->
+    <!-- <script src="/js/preloading.js"></script> -->
+    <script src="/js/jquery.js"></script>
+
+    <script>
+        $(window).on('load', function () {
+          $('#loading').fadeToggle();
+        }) 
+    </script>
+    <!-- End Preloading JS -->
 
     <script>
         var typed = new Typed('.header_title_span', {

@@ -236,12 +236,21 @@
     </div>
 
     <!-- PreLoading -->
-    <div class="loader">
-        <img src="/image/loading.gif" alt="">
+    <div id="loading">
+        <img id="loading-image" src="/image/loading.gif" alt="">
       </div>
     <!-- End Preloading -->
 
-    <script src="/js/preloading.js"></script>
+    <!-- Preloading JS -->
+    <!-- <script src="/js/preloading.js"></script> -->
+    <script src="/js/jquery.js"></script>
+
+    <script>
+        $(window).on('load', function () {
+          $('#loading').fadeToggle();
+        }) 
+    </script>
+    <!-- End Preloading JS -->
 
     <!-- AOS JS -->
     <script>
