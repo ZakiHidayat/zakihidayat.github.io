@@ -122,6 +122,10 @@
   border: 2px solid var(--color-bg2);
 }
 
+li:last-child .certificate_image{
+  max-width: 20%;
+}
+
 .certificate_list_item:hover .certificate_name {
   transform: translatex(2rem);
   -webkit-transform: translatex(2rem);
