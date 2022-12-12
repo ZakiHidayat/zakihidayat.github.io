@@ -21,10 +21,17 @@
     <!-- Menu -->
     <script defer src="/js/menu.js"></script>
 
+    <!-- Intro JS CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+
     <title>Zaki Hidayat</title>
 </head>
 
 <body class="unselectable" oncontextmenu="return false;">
+
+    <!-- Product Tour -->
+    
+     <!-- End Product Tour -->
 
     <!-- Navbar -->
     <div class="nav_wrapper">
@@ -96,7 +103,7 @@
                         <i class="uil uil-envelope"></i></a></div>
             </div>
             <div class="btn_seemyworks_container" data-aos="fade-right" data-aos-duration="2300" data-aos-easing="ease">
-                <a class="btn_seemyworks" href="/pages/achievements.html">See My Achievements</a>
+                <a class="btn_seemyworks" href="/pages/about.html">See More About Me</a>
             </div>
         </div>
 
@@ -116,12 +123,31 @@
     <!-- <script src="/js/preloading.js"></script> -->
     <script src="/js/jquery.js"></script>
 
+    <!-- Intro.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/6.0.0/intro.min.js"></script>
+
     <script>
         $(window).on('load', function () {
           $('#loading').fadeToggle();
         }) 
     </script>
     <!-- End Preloading JS -->
+
+    <!-- Intro JS -->
+    <!-- <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+
+    <script>
+        introJs().setOptions({
+            steps: [{
+                intro: "Hello world!"
+            }, {
+                element: document.querySelector('#header_text'),
+                intro: "Click here to login!"
+            }]
+        }).start();
+    </script> -->
+
+    <!-- End Intro Js -->
 
     <!-- Typed JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -136,9 +162,11 @@
     </script>
     <!-- End Typed JS -->
 
+    <!-- AOS -->
     <script>
         AOS.init();
     </script>
+    <!-- End AOS -->
 </body>
 
 </html>
