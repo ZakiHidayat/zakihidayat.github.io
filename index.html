@@ -23,6 +23,7 @@
 
     <!-- Intro JS CSS-->
     <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/themes/introjs-modern.css">
 
     <title>Zaki Hidayat</title>
 </head>
@@ -40,7 +41,7 @@
             <div class="logo">
                 <a href="/index.html">Zaki Hidayat</a>
             </div>
-            <div class="toggle">
+            <div  id="toggle" class="toggle">
                 <i class="uil uil-bars"></i>
                 <i class="uil uil-multiply"></i>
             </div>
@@ -134,18 +135,20 @@
     <!-- End Preloading JS -->
 
     <!-- Intro JS -->
-    <!-- <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
 
     <script>
-        introJs().setOptions({
-            steps: [{
-                intro: "Hello world!"
-            }, {
-                element: document.querySelector('#header_text'),
-                intro: "Click here to login!"
-            }]
+        introJs().setOptions({ 
+            dontShowAgain: false,
+            showBullets: false,
+            doneLabel: "Okay, I'm Understand",
+            steps: [{ 
+                title: 'This is Navigation Bar', 
+                element: document.querySelector('.toggle'), 
+                intro: 'Click Me For See More About Me' 
+            }] 
         }).start();
-    </script> -->
+    </script>
 
     <!-- End Intro Js -->
 
